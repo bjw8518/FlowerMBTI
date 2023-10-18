@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>꽃 MBTI테스트</title>
+    <meta name="description" content="나랑 닮은 꽃을 MBTI를 기반으로 추천해주는 테스트입니다.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="꽃 MBTI테스트">
+    <meta property="og:description" content="나랑 닮은 꽃을 MBTI를 기반으로 추천해주는 테스트입니다.">
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body class="container">
+    <article class="wrapper">
+    <article class="start">
+        <h1 class="logo">
+            <img src="img/logo.png">
+        </h1>
+        <button type="button" class="btn_1" onclick='start();'>테스트 시작하기</button>
+    </article>
+    <article class="question">
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)"></div>
+        </div>
+        <h2 id="title" class="problem1">문제</h2>
+        <input id="type" type="hidden" value="EI">
+        <button id="A" type="button" class="btn_2">ddd기</button>
+        <button id="B" type="button" class="btn_2">ddd기</button>
+    </article>
+    <article class="result">
+        <img id="img" src="img/rose.jpg" alt="flower" class="img-circle">
+        <h2 id="flower" class="flower-name">꽃이름</h2>
+        <h3 id="explain" class="ex">설명</h3>
+        <div class="share addthis_inline_share_toolbox_1c8f"></div>
+    </article>
+
+
+</article>
+
+
+    <input type="hidden" id="EI" value="0">
+    <input type="hidden" id="SN" value="0">
+    <input type="hidden" id="TF" value="0">
+    <input type="hidden" id="JP" value="0">
+    <script src="./script/mbti.js"></script>
+
+
+</body>
+</html>
